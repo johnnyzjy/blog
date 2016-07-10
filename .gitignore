@@ -44,3 +44,4 @@ bower.json
 /.idea/
 .DS_Store
 .keep
+/public/ckeditor_assets/
