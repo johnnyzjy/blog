@@ -1,5 +1,6 @@
 class WelcomeController < ApplicationController
   def index
+    @article = Article.first
   end
 
   def ckeditor

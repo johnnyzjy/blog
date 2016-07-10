@@ -45,3 +45,4 @@ bower.json
 .DS_Store
 .keep
 /public/ckeditor_assets/
+/db/schema.rb
