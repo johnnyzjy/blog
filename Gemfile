@@ -33,6 +33,8 @@ gem 'paperclip'
 
 gem 'ckeditor'
 
+gem 'mercury-rails'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
