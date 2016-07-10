@@ -1,20 +1,12 @@
 Rails.application.routes.draw do
-
   mount Ckeditor::Engine => '/ckeditor'
+  get 'welcome/index'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
-  #TODO: why error?
-  # Mercury::Engine.routes
-
   # You can have the root of your site routed with "root"
   root 'welcome#index'
-
-  get '/ckeditor', to: 'welcome#ckeditor'
-  get '/mercury', to: 'welcome#mercury'
-  get '/kindeditor', to: 'welcome#kindeditor'
-  get '/ueditor', to: 'welcome#ueditor'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
