@@ -44,6 +44,18 @@ class ArticlesController < ApplicationController
     redirect_to articles_path
   end
 
+  def mercury
+    page = Article.find(params[:id])
+    page.title = params[:content][:page_name][:value]
+    page.content = params[:content][:page_name][:value]
+    page.save!
+    render text: ""
+  end
+
+  def mercury_update
+    
+  end
+
   private
   def article_params
     params.require(:article).permit(:title, :text)

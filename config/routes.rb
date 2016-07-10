@@ -10,6 +10,7 @@ Rails.application.routes.draw do
 
   get '/ckeditor', to: 'welcome#ckeditor'
   get '/mercury', to: 'welcome#mercury'
+  get '/editor/mercury', to: "welcome#mercury"
   get '/kindeditor', to: 'welcome#kindeditor'
   get '/ueditor', to: 'welcome#ueditor'
 
@@ -24,6 +25,9 @@ Rails.application.routes.draw do
   resources :articles do
     post 'articles/:id/edit' => 'aritcles#edit'
     resources :comments
+    collection do
+      post 'mercury_update'
+    end
   end
 
   # Example resource route with options:
