@@ -35,6 +35,8 @@ gem 'ckeditor'
 
 gem 'mercury-rails'
 
+gem 'rails_kindeditor'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 

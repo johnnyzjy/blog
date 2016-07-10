@@ -1,0 +1,5 @@
+<%= form_for @article do |f| %>
+    <%= f.kindeditor :text %>
+    <%= f.kindeditor :text, :width => 800, :height => 300 %>
+    <%= f.kindeditor :text, :allowFileManager => false %>
+<% end %>

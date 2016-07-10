@@ -46,3 +46,4 @@ bower.json
 .keep
 /public/ckeditor_assets/
 /db/schema.rb
+/public/uploads/
